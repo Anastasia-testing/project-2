@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="./stylesheets/addNewStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Crete+Round|IBM+Plex+Serif|Tajawal&display=swap"
         rel="stylesheet">
-
-
 </head>
 
 <body>
@@ -63,7 +61,8 @@
                                     </div>
                                 </form>
                             </div>
-                            <button id="customerSubmit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <button id="customerSubmit" class="btn waves-effect waves-light" type="submit"
+                                name="action">Submit
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>
@@ -95,7 +94,8 @@
                                     </div>
                                 </form>
                             </div>
-                            <button id="itemSubmit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <button id="itemSubmit" class="btn waves-effect waves-light" type="submit"
+                                name="action">Submit
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>
@@ -105,12 +105,28 @@
                 <li>
                     <div class="collapsible-header"><i class="material-icons">create_new_folder</i>Add Order</div>
                     <div class="collapsible-body">
-                        <span>Can we make this with drop downs of customers and items?</span>
+                        <div class="input-field col s12">
+                            <select>
+                                <option value="" disabled selected>Choose Customer</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Choose Customer</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <select multiple>
+                                <option value="" disabled selected>Choose Items</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Choose Items</label>
+                        </div>
                     </div>
                 </li>
-                <!---------------   can not get the state field to correctly validate
-                    or get a "select" drop down of states to work
-                    something with the initializing i can not figure out ------------------->
+
                 <li>
                     <div class="collapsible-header"><i class="material-icons">person_add</i>Add Employee</div>
                     <div class="collapsible-body">
@@ -190,12 +206,8 @@
                                                 <option value="WV">WV</option>
                                                 <option value="WI">WI</option>
                                                 <option value="WY">WY</option>
-                                              </select>
-                                              <label>State</label>
-                                            <!-- <input id="EmState" type="text" data-length="2" class="validate">
-                                            <label for="EmState">State</label>
-                                            <span class="helper-text"
-                                                data-error="Please enter a valid State abbreviation"></span> -->
+                                            </select>
+                                            <label>State</label>
                                         </div>
                                     </div>
                                     <div class="row">
@@ -214,7 +226,8 @@
                                     </div>
                                 </form>
                             </div>
-                            <button id="employeeSubmit" class="btn waves-effect waves-light" type="submit" name="action">Submit
+                            <button id="employeeSubmit" class="btn waves-effect waves-light" type="submit"
+                                name="action">Submit
                                 <i class="material-icons right">send</i>
                             </button>
                         </div>
@@ -226,10 +239,10 @@
         </div>
 
     </div>
-   
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+
     <script src="./js/addNewScript.js"></script>
 
 </body>
